@@ -59,7 +59,7 @@ npm --version
 
 ### 4.1 Клонируйте репозиторий проекта по следующей ссылке:
 
-[Ссылка на репозиторий](https://github.com/your-repo-link)
+[Ссылка на репозиторий](https://github.com/it-incubator/nestjs-webinar-init-repo)
 
 Чтобы клонировать репозиторий, выполните команду в терминале:
 
