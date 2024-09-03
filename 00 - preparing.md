@@ -64,7 +64,7 @@ npm --version
 Чтобы клонировать репозиторий, выполните команду в терминале:
 
 ```bash
-git clone https://github.com/your-repo-link.git
+git clone https://github.com/it-incubator/nestjs-webinar-init-repo.git
 ```
 ### 4.2 Установите зависимости
 После того как репозиторий будет скачан, откройте терминал в папке с проектом.
