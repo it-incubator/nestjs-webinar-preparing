@@ -33,4 +33,4 @@
 ```bush
 ssh -R 80:localhost:5001 localhost.run
 ```
-и получаем туннель тут же в терминале: https://some.life, например `https://ac2643a7c2cb3.lhr.life`
+и получаем туннель тут же в терминале, например `https://ac2643a7c2cb3.lhr.life`
