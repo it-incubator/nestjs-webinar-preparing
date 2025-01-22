@@ -13,8 +13,8 @@
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=bookstall   # Имя вашей базы данных
-USERNAME=postgres    # Имя пользователя базы данных
-PASSWORD=your_password    # Пароль пользователя базы данных
+DB_NEST_USER=postgres    # Имя пользователя базы данных
+DB_PASSWORD=your_password    # Пароль пользователя базы данных
 DB_TYPE=postgres
 
 PORT=5001 #порт приложения
