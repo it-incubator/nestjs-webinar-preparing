@@ -47,3 +47,29 @@ ssh -R 80:localhost:5001 localhost.run
 ```bush
 ssh -R 80:localhost:5001 nokey@localhost.run
 ```
+### 2.2.1 Если появилась ошибка "Permission denied (publickey)" и публичной ссылки нет
+
+ - Запустить Git Bash от администратора
+ - Ввести команду
+```bush
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+ - Запустить терминал от администратора
+ - Ввести команду
+```bush
+# start the ssh-agent in the background
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+Start-Service ssh-agent
+```
+ - Ввести ещё команду заменив <YOUR_USER> на вашего пользователя
+```bush
+ssh-add c:/Users/<YOUR_USER>/.ssh/id_ed25519
+```
+ - Должно появиться сообщение "Identity added: c:/Users/<YOUR_USER>/.ssh/id_ed25519 (c:/<YOUR_USER>/</.ssh/id_ed25519)". Если файл не получилось найти по даннамиу пути, через поиск файлов найти и поместить в указанный каталог
+ - Добавить ключ в GitHub в настройках
+ - Теперь просто выполняем команду в терминале и получаем ссылку
+```bush
+ssh -R 80:localhost:5001 localhost.run
+```
+
+[Источник](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
